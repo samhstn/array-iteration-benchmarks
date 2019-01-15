@@ -30,10 +30,10 @@ My personal findings were that elixir is actually pretty slow in comparison to n
 The result of running
 
 ```bash
-echo "\n\`\`\`bash\n$(./run.sh)\n\`\`\`" >> README.md
+./run.sh
 ```
 
-with nothing below this line, produced the following for me:
+produced the following for me:
 
 ```bash
 generating json with array length: 10000
