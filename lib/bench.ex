@@ -7,7 +7,6 @@ defmodule Mix.Tasks.Bench do
 
   def run(_cmds) do
     strings = File.read!("strings.json") |> Jason.decode!
-    IO.puts length(strings)
     start_time = DateTime.utc_now() |> DateTime.to_unix(:millisecond)
 
     duplicate_count = count_duplicates(strings)
