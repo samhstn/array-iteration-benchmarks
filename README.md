@@ -20,10 +20,14 @@ Languages being tested:
 Test your own findings by running:
 
 ```bash
+mix dep.get
 ./run.sh
 ```
 
-My personal findings were that elixir is actually pretty slow in comparison to nodejs.
+My personal findings were that Elixir is roughly 7x _faster_ than Nodejs.
+
+> Your results will vary depending on the number of cores your processor has.
+> Elixir parallelises the computation of `Enum.uniq` so Array uniqueness is _very_ fast.
 
 ### Results
 
@@ -42,5 +46,12 @@ Number of duplicates: 0
 Execution time 71ms
 Elixir
 Number of duplicates: 0
-Execution time 1603ms
+Execution time 10ms
+```
+
+```sh
+$ node -v
+v11.6.0
+$ elixir -v
+Elixir 1.7.4
 ```
