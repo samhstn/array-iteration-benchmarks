@@ -1,8 +1,8 @@
-# Array iteration benchmarks
+# Array iteration benchmarks
 
 A comparison of language speeds for iterating through arrays.
 
-### Why
+### Why
 
 I would like to know the performance difference for the following operations in the languages I use.
 
@@ -15,7 +15,7 @@ Languages being tested:
 + Node
 + Elixir
 
-### Findings
+### Findings
 
 Test your own findings by running:
 
@@ -29,7 +29,7 @@ My personal findings were that Elixir is roughly 7x _faster_ than Nodejs.
 > Your results will vary depending on the number of cores your processor has.
 > Elixir parallelises the computation of `Enum.uniq` so Array uniqueness is _very_ fast.
 
-### Results
+### Results
 
 The result of running
 
