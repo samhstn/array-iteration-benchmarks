@@ -2,7 +2,7 @@ defmodule Mix.Tasks.Bench do
   use Mix.Task
 
   defp count_duplicates(strings) when is_list(strings) do
-    length(strings) - length(Enum.uniq(strings)
+    length(strings) - length(Enum.uniq(strings))
   end
 
   def run(_cmds) do
