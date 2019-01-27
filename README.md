@@ -20,7 +20,7 @@ Languages being tested:
 Test your own findings by running:
 
 ```bash
-mix dep.get
+mix deps.get
 ./run.sh
 ```
 
